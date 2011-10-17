@@ -1,0 +1,1 @@
+{include ../../../system/scripts/libs/pngfix.js}

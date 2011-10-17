@@ -1,0 +1,55 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="author" content="dron" />
+<meta name="viewport" content="width=device-width; height=device-height; user-scalable=no; initial-scale=1.0; maximum-scale=1.0;"/>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<title>三国杀单机版</title>
+<style type="text/css">
+	body{
+		padding: 40px;
+		text-align: center;
+	}
+	#start-button{
+		width: 120px;
+		height: 40px;
+		font-weight: 700;
+		font-size: 14px;
+	}	
+</style>
+</head>
+<body>
+
+
+<input type="button" value="开始游戏" id="start-button" onclick="startGame()" />
+
+<script type="text/javascript">
+	var winHandle;
+	function startGame(){
+		var width = 1000, height = 620, left = (screen.width - width) / 2 - 5, top = 0;
+		if(winHandle){
+			try{
+				if(winHandle.closed == false){
+					window.alert("游戏窗口已经打开。");
+					return ;				    
+				}
+			}catch(e){
+			}
+		}
+	    winHandle = window.open("open.html", "", "height=" + height + 
+	    	", width=" + width + ", top=" + top + ", left=" + left + 
+	    	", toolbar=no, menubar=no, scrollbars=no, resizable=no, location=no, status=no");
+		setTimeout(function(){
+		    if(!winHandle){
+		    	window.alert("弹出窗口被屏蔽！是不是装了拦截弹窗的软件？");
+		        return ;
+		    }
+		    winHandle.focus();
+		}, 100);
+	}
+</script>
+
+</body>
+</html>

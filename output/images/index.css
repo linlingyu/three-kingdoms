@@ -1,0 +1,381 @@
+﻿html{
+	color:#000;
+	background:#FFF;
+}
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, textarea, p, blockquote, th, td{
+	margin:0;
+	padding:0;
+}
+table{
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+fieldset, img{
+	border: 0;
+}
+address, caption, cite, code, dfn, em, strong, th, var{
+	font-style: normal;
+	font-weight: normal;
+}
+li{
+	list-style:none;
+}
+caption, th{
+	text-align:left;
+}
+h1, h2, h3, h4, h5, h6{
+	font-size: 100%;
+	font-weight: normal;
+}
+q:before, q:after{
+	content: '';
+}
+abbr, acronym{
+	border: 0;
+	font-variant: normal;
+}
+sup{
+	vertical-align: text-top;
+}
+sub{
+	vertical-align: text-bottom;
+}
+input, textarea, select{
+	font-family: inherit;
+	font-size: inherit;
+	font-weight: inherit;
+}
+input, textarea, select{
+	*font-size: 100%;
+}
+legend{
+	color: #000;
+}
+html, body{
+	font-family: Tahoma, Verdana, Arial, Helvetica, sans-serif;
+}
+
+.clearfix:after{
+	content: "/20";
+	display: block;
+	height: 0;
+	overflow: hidden;
+	clear: both;
+}
+
+.clearfix{
+	zoom: 1;
+}
+
+/*
+	场景主色调： 948563
+*/
+
+html{
+	background-color: #000;
+	overflow: hidden;
+}
+
+body{	
+	text-align: center;
+}
+
+#canvas{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	width: 1000px;
+	height: 620px;
+	background: #948563 url(background.png) repeat 0 0;
+	text-align: left;
+	margin: auto;
+	position: relative;
+}
+
+#sidebar{
+	position: absolute;
+	left: 815px;
+	top: 0;	
+	width: 185px;
+	height: 620px;
+	background-image: url(sidebar-background.png);
+	_background: none;
+	_filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='images/sidebar-background.png',sizingMethod='scale');
+}
+
+#player-control-area{
+	position: absolute;
+	left: 0;
+	top: 451px;
+	width: 1000px;
+	height: 169px;
+}
+
+#player-control-area .background-1{
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 1000px;
+	height: 33px;
+	background-image: url(player-control-area-background-1.png);
+	_background: none;
+	_filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='images/player-control-area-background-1.png',sizingMethod='scale');
+}
+
+#player-control-area .background-2{
+	position: absolute;
+	left: 0;
+	top: 33px;
+	width: 1000px;
+	height: 136px;
+	background-image: url(player-control-area-background-2.png);
+}
+
+#players .player{
+	position: absolute;
+}
+
+#players .player .background-1{
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 142px;
+	height: 9px;
+	background: transparent url(no-repeat.gif) no-repeat 0 0;
+}
+
+#players .player .background-2{
+	position: absolute;
+	left: 0;
+	top: 9px;
+	width: 142px;
+	height: 156px;
+	background: transparent url(repeat-y.gif) repeat-y 0 0;
+}
+
+#players .player .background-3{
+	position: absolute;
+	left: 0;
+	top: 165px;
+	width: 142px;
+	height: 9px;
+	background: transparent url(no-repeat.gif) no-repeat 0 -19px;
+}
+
+#players .player .name,
+#players .player .nick-name{
+	position: absolute;
+	left: 5px;
+	top: 9px;
+	width: 132px;
+	height: 13px;
+	text-align: center;
+	font-size: 12px;
+	font-family: "宋体";
+	color: #eaeaea;
+	background: transparent url(no-repeat.gif) no-repeat 0 -38px;
+	padding: 0 0 1px 0;
+}
+
+#players .player .nick-name{
+	top: 25px;
+}
+
+#players .player .nation{
+	position: absolute;
+	left: 5px;
+	top: 9px;
+	width: 29px;
+	height: 29px;
+	background: transparent url(no-repeat.gif) no-repeat 0 0;
+}
+
+#players .player .wei{
+	background-position: 0 -61px;
+}
+
+#players .player .shu{
+	background-position: -39px -61px;
+}
+
+#players .player .wu{
+	background-position: -78px -61px;
+}
+
+#players .player .qun{
+	background-position: -117px -61px;
+}
+
+#players .player .mask{
+	position: absolute;
+	left: 114px;
+	top: 9px;
+	width: 22px;
+	height: 26px;
+	background: transparent url(no-repeat.gif) no-repeat -152px 0;
+}
+
+#players .player .zhugong{
+	background-position: -184px 0;
+}
+
+#players .player .zhongchen{
+	background-position: -216px 0;
+}
+
+#players .player .fanzei{
+	background-position: -248px 0;
+}
+
+#players .player .neijian{
+	background-position: -280px 0;
+}
+
+#players .player .photo{
+	position: absolute;
+	left: 13px;
+	top: 42px;
+	width: 116px;
+	height: 48px;
+	background: transparent url(standard/generals.png) no-repeat 0 0;
+}
+
+#players .player .photo-frame{
+	position: absolute;
+	left: 7px;
+	top: 38px;
+	width: 128px;
+	height: 60px;
+	background: transparent url(no-repeat.gif) no-repeat -156px -36px;
+}
+
+#players .player .life{
+	position: absolute;
+	left: 59px;
+	top: 89px;
+	width: 75px;
+	height: 22px;
+	text-align: left;
+}
+
+#players .player .life div{
+	float: left;
+	width: 14px;
+	height: 22px;
+	background: transparent url(no-repeat.gif) no-repeat -312px 0;
+}
+
+#players .player .life div.r{
+	background-position: -337px 0;
+}
+
+#players .player .life div.y{
+	background-position: -362px 0;
+}
+
+#players .player .life div.g{
+	background-position: -387px 0;
+}
+
+#players .player .equipments{
+	position: absolute;
+	left: 7px;
+	top: 111px;
+	width: 129px;
+	height: 56px;
+	overflow: hidden;
+}
+
+#players .player .equipments .item{
+	position: relative;
+	width: 129px;
+	height: 14px;
+	background: transparent url(no-repeat.gif) no-repeat -294px -36px;
+	overflow: hidden;
+}
+
+#players .player .equipments .weapon-1{
+	background-position: -294px -60px;
+}
+
+#players .player .equipments .weapon-2{
+	background-position: -294px -60px;
+}
+
+#players .player .equipments .horse-1{
+	background-position: -294px -84px;
+}
+
+#players .player .equipments .horse-2{
+	background-position: -294px -84px;
+}
+
+#players .player .equipments .item .text-1{
+	position: absolute;
+	left: 19px;
+	top: 0;
+	font-size: 12px;
+	color: #000;
+	line-height: 13px;
+}
+
+#players .player .equipments .item .text-2{
+	position: absolute;
+	left: 35px;
+	top: 0;
+	font-size: 12px;
+	color: #000;
+	line-height: 13px;
+}
+
+#players .player .equipments .item .card-color{
+	position: absolute;
+	left: 99px;
+	top: 0;
+	width: 13px;
+	height: 13px;
+	background: transparent url(no-repeat.gif) no-repeat -23px -106px;
+}
+
+#players .player .equipments .item .card-number{
+	position: absolute;
+	left: 112px;
+	top: 0;
+	width: 13px;
+	height: 13px;
+	background: transparent url(no-repeat.gif) no-repeat -276px -152px;
+}
+
+#players .player .cards, 
+#players .player .cards-count{
+	position: absolute;
+	left: 9px;
+	top: 173px;
+	width: 124px;
+	height: 37px;
+}
+
+#players .player .cards .item{
+	position: absolute;
+	top: 0;
+	width: 26px;
+	height: 37px;
+	background: transparent url(no-repeat.gif) no-repeat -299px -108px;
+}
+
+#players .player .cards-count{
+	text-align: center;
+	line-height: 37px;
+	font-size: 14px;
+	color: #ff6;
+	font-family: 宋体, Arial;
+	font-weight: 700;
+    filter:
+        dropshadow(offx = 2, offy = 1, color = #333333, positive = 1);
+    text-shadow: 2px 1px 0 #333;
+}
+
+#player-1{
+	left: 337px;
+	top: 6px;
+}
